@@ -2,7 +2,7 @@
 
 ### Written by Jason Spears
 
-- [ ] 1.  Move files into folders sorted by file extension
+- [X] 1.  Move files into folders sorted by file extension
 
 ### Basic Arguments
 
