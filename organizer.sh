@@ -34,7 +34,7 @@ for file in "$testDownloads"/*; do
         echo "===================================="
         echo "File Path: $file"
         echo "File Extension: $extension"
-        echo "Moving it to the: $extension directory"
+        echo "Moving it to: $extension directory"
         cp "$file" "$extension"
         fi
     fi

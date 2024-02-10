@@ -7,11 +7,12 @@
 ### Basic Arguments
 
 - [ ]      -h <help> : Display this information on how to use the script.
-- [ ]      -d <path_to_directory>: Input for the directory to be sorted.
+- [ ]      -p <path_to_directory>: Input for the directory to be sorted.
+- [ ]      -d <allow_file_overwrite>: Allow for file overwrite if two files share the same name.
 - [ ]      -l <log_file_path>: Directory for the log file output.
 - [ ]      -n <log_file_name>: Input for the name of the log file.
 - [ ]      -x <misc_extension_length>: Input for the extension length to send to the Misc directory.
-                      The default limit is 4.
+                          The default limit is 4.
 
 ### Statistics
 
