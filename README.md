@@ -22,9 +22,9 @@
     - [ ]      -sQ = Display the time taken
     - [ ]      -sA = Display all statistics
 
- #### (All of the statistics will be shown at the end of the program and will not function if the program is closed prematurely).
+     #### (All of the statistics will be shown at the end of the program and will not function if the program is closed prematurely).
 
-  ### Logging
+  ### File Movement Logging
   
  - [ ] 2.  Log file movements to a log file (-l)
 
