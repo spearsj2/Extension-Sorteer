@@ -24,7 +24,7 @@
 
      #### (All of the statistics will be shown at the end of the program and will not function if the program is closed prematurely).
 
-  ### File Movement Logging
+### File Movement Logging
   
  - [ ] 2.  Log file movements to a log file (-l)
 
