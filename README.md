@@ -26,6 +26,6 @@
 
   ### Logging
   
- - [ ] 2.  Log moves to a log file (-l)
+ - [ ] 2.  Log file movements to a log file (-l)
 
 ![](INSERT IMAGE HERE)
