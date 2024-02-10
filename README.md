@@ -6,7 +6,7 @@
 
 ### Basic Arguments
 
-- [ ]      -h <help>: Display this information on how to use the script.
+- [ ]      -h <help> : Display this information on how to use the script.
 - [ ]      -d <path_to_directory>: Input for the directory to be sorted.
 - [ ]      -l <log_file_path>: Directory for the log file output.
 - [ ]      -n <log_file_name>: Input for the name of the log file.
