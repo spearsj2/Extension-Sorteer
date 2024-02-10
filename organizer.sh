@@ -3,39 +3,43 @@
 # Define Variables
 userDownloads=~/Downloads # Production (DO NOT USE)
 
-testDownloads=$(pwd)/Download
-
-MiscDir=$(pwd)/Misc
+parentDir=$(pwd)
+fileDir=$parentDir/Download
+miscDir=$fileDir/Misc
 
 # Check if Misc directory is created, if not, create it
-if [ ! -d "$MiscDir" ]; then
+if [ ! -d "$miscDir" ]; then
     echo "===================================="
-    echo "Creating the directory: $MiscDir"
-    echo "===================================="
-    mkdir "$MiscDir"
+    echo "Creating the directory: $miscDir"
+    mkdir "$miscDir"
 fi
 # Loop through each file in the checking directory
-for file in "$testDownloads"/*; do
+for file in "$fileDir"/*; do
     if [ -f "$file" ]; then
         extension="${file##*.}"
 
+        # Choose where the extension directories go
+        extensionDir=$fileDir/$extension
+
         #Check if the extension is over 4 characters
         if [ ${#extension} -gt 4 ]; then
+            echo "===================================="
             echo "Moving $file to the Misc folder"
-            cp "$file" "$MiscDir"
+            mv "$file" "$miscDir"
         else
         # Check if extension directory is created, if not, create it
-        if [ ! -d "$(pwd)/$extension" ]; then
+        if [ ! -d "$extensionDir" ]; then
+            echo "===================================="
             echo "Creating the directory: $extension"
-            mkdir "$extension"
+            mkdir "$extensionDir"
         fi
-
+        
         # Move the remaining files to their correct folder
         echo "===================================="
         echo "File Path: $file"
         echo "File Extension: $extension"
         echo "Moving it to: $extension directory"
-        cp "$file" "$extension"
+        mv "$file" "$extensionDir"
         fi
     fi
 done;
