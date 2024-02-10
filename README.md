@@ -17,10 +17,10 @@
 
 - [ ]      -s <statistics>: Echoes the following statistics:
 
-- [ ]      -sN = Display the number of files moved
-- [ ]      -sS = Display the size of files moved
-- [ ]      -sQ = Display the time taken
-- [ ]      -sA = Display all statistics
+    - [ ]      -sN = Display the number of files moved
+    - [ ]      -sS = Display the size of files moved
+    - [ ]      -sQ = Display the time taken
+    - [ ]      -sA = Display all statistics
 
  #### (All of the statistics will be shown at the end of the program and will not function if the program is closed prematurely).
 
