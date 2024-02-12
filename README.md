@@ -12,7 +12,7 @@
 - [ ]      -l <log_file_path>: Directory for the log file output.
 - [ ]      -n <log_file_name>: Input for the name of the log file.
 - [ ]      -x <misc_extension_length>: Input for the extension length to send to the Misc directory.
-                          The default limit is 4.
+                                  The default limit is 4.
 
 ### Statistics
 
@@ -29,4 +29,4 @@
 
 - [ ] 2.  Log file movements to a log file (-l)
 
-![](INSERT IMAGE HERE)
+![](Screenshot 2024-02-10 023346.png)
