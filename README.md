@@ -8,13 +8,13 @@
 
 ### Basic Arguments
 
-- [ ]      -h <help> : Display this information on how to use the script.
-- [ ]      -p <path_to_directory>: Input for the directory to be sorted.
-- [ ]      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."
+- [x]      -h <help> : Display this information on how to use the script.
+- [x]      -p <path_to_directory>: Input for the directory to be sorted.
+- [x]      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."
 - [ ]      -l <log_file_path>: Directory for the log file output.
 - [ ]      -n <log_file_name>: Input for the name of the log file.
 - [ ]      -x <misc_extension_length>: Input for the extension length to send to the Misc directory.
-                                                              The default limit is 4.
+                                                                  The default limit is 4.
 
 ### Statistics
 

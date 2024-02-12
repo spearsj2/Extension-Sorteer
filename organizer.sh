@@ -1,11 +1,12 @@
 #! /bin/bash
 
 # Define Variables
-userDownloads=~/Downloads # Production (DO NOT USE YET)
 
-parentDir=$(pwd)
-fileDir=$parentDir/Download
-miscDir=$fileDir/Misc
+# userDownloads=~/Downloads # Production (DO NOT USE YET)
+
+# parentDir=$(pwd)
+# fileDir=$parentDir/Download
+# miscDir=$fileDir/Misc
 
 function controls () {
     echo ""
@@ -17,6 +18,8 @@ function controls () {
     echo "  -      -p <path_to_directory>: Input for the directory to be sorted."
     echo "  -      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."    
     echo "  -      -l <log_file_path>: Directory for the log file output."
+    echo "              The default is no logging."
+    echo ""
     echo "  -      -n <log_file_name>: Input for the name of the log file."
     echo "  -      -x <misc_extension_length>: Input for the extension length to send to the Misc directory."
     echo "              The default character limit is 4."
