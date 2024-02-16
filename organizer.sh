@@ -29,10 +29,10 @@ function controls () {
     echo "### Basic Arguments ###"
     echo ""
     echo "  -      -h <help> : Display this information on how to use the script."
-    echo "  -      -p <path_to_directory>: Input for the directory to be sorted."
+    echo "  -      -f <path_to_directory>: Input for the directory to be sorted."
     echo "  -      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."    
-    echo "  -      -l <logPath>: *This enables logging*. Directory for the log file output."
-    echo "              The default is no logging."
+    echo "  -      -l <logPath>: Directory for the log file output."
+    echo "              The default is no logging but this command enables it once given an argument."
     echo ""
     echo "  -      -n <log_file_name>: Input for the name of the log file."
     echo "  -      -x <misc_extension_length>: Input for the extension length to send to the Misc directory."
@@ -61,18 +61,18 @@ if [[ $# -eq 0 ]]; then
 fi
 
 # # Process command-line options and arguments
-while getopts ":h:p:m:l:n:x:" opt; do
+while getopts ":h:f:m:l:n:x:" opt; do
     case $opt in
         h) # option h - Display controls for using the program
             controls
             ;;
 
-        p) # option p - Input directory for files to be sorted
+        f) # option f - Input directory for files to be sorted
             fileDir=$OPTARG
 
                 # Check if directory does not exist
                 if [[ ! -d $fileDir ]]; then
-                    echo "$fileDir does not exist"F
+                    echo "$fileDir does not exist"
                 fi
             ;;
         
@@ -97,12 +97,6 @@ while getopts ":h:p:m:l:n:x:" opt; do
 
         n) # option n - Change the name for the log file (default = named ($inputDir_$(date "%Y%m%d").log))
             logFile=$OPTARG
-
-            # Check if log file directory is changed, if not set to file directory instead
-            if [[ ! -n $logPath ]]; then
-                    log $logBool "echo Option -$OPTARG requires an argument." "$logPath/$logFile"
-                fi
-
             ;;
 
         x) # option x - Change the minumum character length to be moved to Misc directory
@@ -141,6 +135,11 @@ while getopts ":h:p:m:l:n:x:" opt; do
 
         esac
 done
+
+# Check if misc directory is changed, if not, set to within file path instead
+if [[ ! -n $miscDir ]]; then
+    miscDir="$fileDir/Misc"
+fi
 
 # Record the current date and time for logging purposes
 log $logBool 'echo ' "$logPath/$logFile"

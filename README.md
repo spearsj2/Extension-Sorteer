@@ -10,17 +10,24 @@
 
 ### Project Goal #1
 
-Move files into folders sorted by file extension
+Move files into folders sorted by file extension.
+
+### Project Goal #2
+
+Log file movements to a log file (-l)
 
 ## Basic Arguments
 
-- [x]      -h <help>: Display this information on how to use the script.
-- [x]      -p <path_to_directory>: Input for the directory to be sorted.
-- [x]      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."
-- [x]      -l <log_file_path>: Directory for the log file output.
-- [x]      -n <log_file_name>: Input for the name of the log file.
-- [x]      -x <misc_extension_length>: Input for the extension length to send to the Misc directory.
-                                                                                                                                                                                      The default limit is 5.
+Arguments required are marked in checkboxes.
+
+- [ ]      -h <help>: Display this information on how to use the script.
+- [x]      -f <path_to_directory>: Input for the directory to be sorted.
+- [ ]      -m <path_to_misc_directory>: Input for the miscellaneous directory to be sorted."
+- [ ]      -l <log_file_path>: Directory for the log file output.
+                                                                                                                                                                                                                  This enables logging.
+- [ ]      -n <log_file_name>: Input for the name of the log file.
+- [ ]      -x <misc_extension_length>: Input for the extension length to send to the Misc directory.
+                                                                                                                                                                                                                  The default limit is 5.
 
 <!-- ### Statistics
 
@@ -32,10 +39,6 @@ Move files into folders sorted by file extension
   - [ ]      -sA = Display all statistics
 
   #### (All of the statistics will be shown at the end of the program and will not function if the program is closed prematurely). -->
-
-### Project Goal #2
-
-Log file movements to a log file (-l)
 
 ## What I Learned From This Project:
 
