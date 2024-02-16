@@ -86,7 +86,6 @@ while getopts ":h:p:m:l:n:x:" opt; do
 
                 # Check if directory does not exist
                 if [[ ! -d $logPath ]]; then
-                    log $logBool "echo $logPath does not exist - Creating $logPath Directory" "$logPath/$logFile"
                     mkdir $logPath
                 fi
 
@@ -151,7 +150,7 @@ log $logBool 'echo ' "$logPath/$logFile"
 # Check if Misc directory is created, if not, create it
 if [ ! -d "$miscDir" ]; then
     log $logBool "echo ====================================" "$logPath/$logFile"
-    log $logBool "echo Creating the directory: $miscDir" "$logPath/$logFile"
+    log $logBool "echo Creating the directory: '$miscDir'" "$logPath/$logFile"
     mkdir "$miscDir"
 fi
 # Loop through each file in the checking directory
@@ -165,7 +164,7 @@ for file in "$fileDir"/*; do
         #Check if the extension is over 4 characters
         if [ ${#extension} -gt $extensionLength ]; then
             log $logBool "echo ====================================" "$logPath/$logFile"
-            log $logBool "echo Moving $file to the Misc folder" "$logPath/$logFile"
+            log $logBool "echo Moving '$file' to the '$miscDir' folder" "$logPath/$logFile"
             mv "$file" "$miscDir"
         else
         # Check if extension directory is created, if not, create it
@@ -177,9 +176,9 @@ for file in "$fileDir"/*; do
             
             # Move the remaining files to their correct folder
             log $logBool "echo ====================================" "$logPath/$logFile"
-            log $logBool "echo File Path: $file" "$logPath/$logFile"
+            log $logBool "echo File Path: '$file'" "$logPath/$logFile"
             log $logBool "echo File Extension: $extension" "$logPath/$logFile"
-            log $logBool "echo Moving it to: $extension directory" "$logPath/$logFile"
+            log $logBool "echo Moving it to: '$fileDir/$extension' directory" "$logPath/$logFile"
             mv "$file" "$extensionDir"
         fi
     fi

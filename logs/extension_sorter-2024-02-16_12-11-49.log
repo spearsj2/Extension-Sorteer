@@ -1,50 +1,50 @@
 
-Current Time: 2024-02-15_22-18-40
+Current Time: 2024-02-16_12-11-49
 
 ====================================
-Creating the directory: ./Misc
+Creating the directory: './Misc'
 ====================================
 Creating the directory: xlsx
 ====================================
-File Path: ./Downloads/2024 Financial Analysis of the Krusty Crab.xlsx
+File Path: './Downloads/2024 Financial Analysis of the Krusty Crab.xlsx'
 File Extension: xlsx
-Moving it to: xlsx directory
+Moving it to: './Downloads/xlsx' directory
 ====================================
-Moving ./Downloads/Corrupt File to the Misc folder
+Moving './Downloads/Corrupt File' to the './Misc' folder
 ====================================
 Creating the directory: lnk
 ====================================
-File Path: ./Downloads/Desktop.lnk
+File Path: './Downloads/Desktop.lnk'
 File Extension: lnk
-Moving it to: lnk directory
+Moving it to: './Downloads/lnk' directory
 ====================================
 Creating the directory: txt
 ====================================
-File Path: ./Downloads/Groccery List.txt
+File Path: './Downloads/Groccery List.txt'
 File Extension: txt
-Moving it to: txt directory
+Moving it to: './Downloads/txt' directory
 ====================================
 Creating the directory: docx
 ====================================
-File Path: ./Downloads/Love Letter.docx
+File Path: './Downloads/Love Letter.docx'
 File Extension: docx
-Moving it to: docx directory
+Moving it to: './Downloads/docx' directory
 ====================================
 Creating the directory: jpg
 ====================================
-File Path: ./Downloads/Photo of Cambodia.jpg
+File Path: './Downloads/Photo of Cambodia.jpg'
 File Extension: jpg
-Moving it to: jpg directory
+Moving it to: './Downloads/jpg' directory
 ====================================
 Creating the directory: pptx
 ====================================
-File Path: ./Downloads/Reasons why we should adopt a puppy.pptx
+File Path: './Downloads/Reasons why we should adopt a puppy.pptx'
 File Extension: pptx
-Moving it to: pptx directory
+Moving it to: './Downloads/pptx' directory
 ====================================
 Creating the directory: accdb
 ====================================
-File Path: ./Downloads/The Entire Microsoft Database.accdb
+File Path: './Downloads/The Entire Microsoft Database.accdb'
 File Extension: accdb
-Moving it to: accdb directory
+Moving it to: './Downloads/accdb' directory
 ====================================
