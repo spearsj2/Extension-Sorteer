@@ -6,7 +6,7 @@
 
 ## Example Execution Code
 
-./organizer.sh -p ./Downloads -m ./Misc -l ./logs -x 6
+./organizer.sh -f ./Downloads -m ./Misc -l ./logs -x 6
 
 ### Project Goal #1
 
