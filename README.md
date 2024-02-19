@@ -56,4 +56,4 @@ I spent well over 20 hours working on this project. I hope I did everything righ
 
 ## Example Execution Code
 
-./organizer.sh -p ./Downloads -m ./Misc -l ./logs -x 6
+./organizer.sh -f ./Downloads -m ./Misc -l ./logs -x 6
