@@ -52,7 +52,8 @@ I started this project by creating a simple loop to echo the names of files in a
 
 I spent a good portion of my free time working on this project. I was given 2 weeks to work on it and started a few days into the 2 weeks. I cobbled together some barebones parts like writing a 'for loop' for every file in a directory. Then I started working on the details like allowing for logging of file movements and even thought about implementing statistics for total time, size and number of files involved from each execution of the command.
 
-I spent well over 20 hours working on this project. I hope I did everything right and I hope it helps you if you are reading this. I think I deserve a '85' /85 on this project because It does what it is supposed to, I spent lots of time refining it, and I enjoyed working on it.
+
+I spent well over 20 hours working on this project. I hope I did everything right and I hope it helps you if you are reading this. I think I deserve a `85`/85 on this project because It does what it is supposed to, I spent lots of time refining it, and I enjoyed working on it.
 
 ## Example Execution Code
 
