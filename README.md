@@ -6,7 +6,7 @@
 
 ## Script Purpose
 
-./organizer.sh -p ./Downloads -m ./Misc -l ./logs -x 6
+The goal of this script is to sort files in a given directory into folders based on their file extensions.
 
 ## Project Goal #1
 
